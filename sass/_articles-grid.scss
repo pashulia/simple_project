@@ -1,8 +1,64 @@
 .articles-grid {
     display: grid;
     gap: 16px;
+
+    &--industry {
+        position: relative;
+    }
+
+    &--solar {
+        position: relative;
+    }
+
+    &--partners {
+        position: relative;
+    }
+
+    &--cafe {
+        position: relative;
+    }
+
+    & &__img {
+        width: 100%;
+
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 35%;
+        left: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        padding: 12px 63px 12px 12px;
+    }
+
+    &__link::after {
+        content: "";
+        background: url(../disign/arrow.svg) no-repeat right;
+        background-position: 30px 0;
+        padding: 2px 28px;
+    }
 }
 
 @media screen and (min-width: 600px) {
-    grid-template-areas: "";
+    .articles-grid {
+        gap: 20px;
+        grid-template-areas:
+            "articles-grid--industry articles-grid--solar"
+            "articles-grid--partners articles-grid--cafe";
+    }
 }
