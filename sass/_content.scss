@@ -1,0 +1,16 @@
+.content {
+    color: #6A7798;
+
+    &__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #021747;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

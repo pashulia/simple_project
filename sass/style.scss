@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF
 }
 
 .container {
@@ -8,4 +9,7 @@ body {
 }
 
 @import 'header';
+@import 'content';
 @import 'content__menu';
+@import 'sections-grid';
+@import 'articles-grid';

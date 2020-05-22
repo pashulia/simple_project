@@ -1,0 +1,8 @@
+.articles-grid {
+    display: grid;
+    gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    grid-template-areas: "";
+}

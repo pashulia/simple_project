@@ -1,0 +1,57 @@
+.sections-grid {
+    display: grid;
+    gap: 17px;
+
+    &__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 125px 0;
+    }
+
+    &__link:hover {
+        opacity: 0.5;
+    }
+
+    &--building {
+        background: url(../disign/laptop.jpg) no-repeat center;
+    }
+
+    &--bringing {
+        background: url(../disign/laptop.jpg) no-repeat center;
+    }
+
+    &--automating {
+        background: url(../disign/work.jpg) no-repeat center;
+    }
+
+    &--boosting {
+        background: url(../disign/it-man.jpg) no-repeat center;
+    }
+
+    &--title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: left;
+        padding: 0 0 0 16px;
+        margin-bottom: 0;
+    }
+
+    &--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        padding: 0 0 0 16px;
+        margin-top: 0;
+    }
+}
+
+@media screen and(min-width: 600px) {
+    .sections-grid {
+        gap: 20px;
+        grid-template-areas:
+            "sections-grd--building sections-grd--bringing"
+            "sections-grd--automating sections-grd--boosting";
+    }
+}

@@ -1,55 +1,18 @@
-body {
-  font-family: "Montserrat", sans-serif;
-}
+/* Error: expected "{".
+ *   ,
+ * 7 |     grid-template-areas: "";
+ *   |                            ^
+ *   '
+ *   sass/_articles-grid.scss 7:28  @import
+ *   sass/style.scss 15:9           root stylesheet */
 
-.container {
-  margin: 16px;
-  border: 1px solid black;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 7 \2502      grid-template-areas: "";\a   \2502                             ^\a   \2575 \a   sass/_articles-grid.scss 7:28  @import\a   sass/style.scss 15:9           root stylesheet';
 }
-
-.header {
-  background: #FFFFFF;
-  display: flex;
-  border-bottom: 2px solid #6F7E9E;
-}
-
-.logo {
-  margin: 28px 0 23px 10%;
-}
-.logo__icon {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: left;
-  color: #31436A;
-  text-decoration: none;
-}
-
-.menu {
-  width: 18px;
-  height: 17px;
-  margin: 34px 10% 34px 50%;
-}
-.menu__link {
-  background: url(../disign/header-menu.svg) no-repeat right;
-  padding: 1px 9px;
-}
-.menu__link:hover {
-  opacity: 0.8;
-}
-
-.content__link {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #021747;
-  text-decoration: none;
-  margin: 10px 0;
-}
-
-.content__link:hover {
-  opacity: 0.5;
-}
-
-/*# sourceMappingURL=style.css.map */
