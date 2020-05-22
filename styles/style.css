@@ -41,9 +41,6 @@ body {
   opacity: 0.8;
 }
 
-.content {
-  color: #6A7798;
-}
 .content__title {
   font-weight: 900;
   font-size: 32px;
@@ -161,11 +158,73 @@ body {
   background-position: 30px 0;
   padding: 2px 28px;
 }
+.articles-grid__link:hover {
+  opacity: 0.5;
+}
 
 @media screen and (min-width: 600px) {
   .articles-grid {
     gap: 20px;
     grid-template-areas: "articles-grid--industry articles-grid--solar" "articles-grid--partners articles-grid--cafe";
+  }
+}
+.contact-us {
+  background-color: #021747;
+}
+.contact-us__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact-us--placeholder {
+  width: 90%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6A7798;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+.contact-us--placeholder:hover {
+  opacity: 0.5;
+}
+.contact-us__radio-btn {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us--would {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6A7798;
+}
+
+.btn-send {
+  border: 1px solid #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #021747;
+  padding: 12px;
+  margin: 24px 0;
+  max-width: 377px;
+}
+
+.send-style::after {
+  content: "";
+  background: url(../disign/arrow.svg) no-repeat right;
+  padding: 2px 28px;
+  margin: 0 0 0 128px;
+}
+
+@media screen and (min-width: 400px) {
+  .send-style::after {
+    margin: 0 0 0 228px;
   }
 }
 
