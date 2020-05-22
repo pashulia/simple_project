@@ -15,13 +15,13 @@ body {
   line-height: 29px;
   text-align: left;
   color: #31436A;
-  margin: 28px 22px 23px 16px;
+  margin: 28px 0 23px 10%;
 }
 
 .menu {
   width: 18px;
   height: 17px;
-  margin: 34px 19px 34px 160px;
+  margin: 34px 10% 34px 50%;
 }
 
 .menu__link {
