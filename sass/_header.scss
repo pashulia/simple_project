@@ -5,26 +5,30 @@
 }
 
 .logo {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: left;
-    color: #31436A;
     margin: 28px 0 23px 10%;
+
+    &__icon {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: left;
+        color: #31436A;
+        text-decoration: none;
+    }
 }
 
 .menu {
     width: 18px;
     height: 17px;
     margin: 34px 10% 34px 50%;
-}
 
-.menu__link {
-    background: url(../disign/header-menu.svg) no-repeat right;
-    padding: 1px 9px;
-}
+    &__link {
+        background: url(../disign/header-menu.svg) no-repeat right;
+        padding: 1px 9px;
+    }
 
-.menu__link:hover {
-    opacity: 0.8;
+    &__link:hover {
+        opacity: 0.8;
+    }
 }

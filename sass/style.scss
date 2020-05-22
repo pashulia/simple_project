@@ -2,4 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    margin: 16px;
+    border: 1px solid black;
+}
+
 @import 'header';
+@import 'content__menu';
