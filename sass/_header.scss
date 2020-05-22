@@ -15,7 +15,16 @@
 }
 
 .menu {
+    width: 18px;
+    height: 17px;
+    margin: 34px 19px 34px 160px;
+}
+
+.menu__link {
     background: url(../disign/header-menu.svg) no-repeat right;
-    padding: 9px 12px;
-    margin-left: 170px;
+    padding: 1px 9px;
+}
+
+.menu__link:hover {
+    opacity: 0.8;
 }
