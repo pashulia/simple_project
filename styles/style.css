@@ -1,3 +1,27 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
+.header {
+  background: #FFFFFF;
+  display: flex;
+  border-bottom: 2px solid #6F7E9E;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color: #31436A;
+  margin: 28px 22px 23px 16px;
+}
+
+.menu {
+  background: url(../disign/header-menu.svg) no-repeat right;
+  padding: 9px 12px;
+  margin-left: 170px;
+}
 
 /*# sourceMappingURL=style.css.map */
