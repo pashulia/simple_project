@@ -3,17 +3,18 @@
     flex-wrap: wrap;
 
     &--text {
-        flex-basis: 75%;
+        flex-basis: 68%;
     }
 
     &__reviews {
         padding: 35px 90px;
-        flex-basis: 25%;
+        flex-basis: 20%;
     }
 
     &__total {
         display: flex;
         flex-direction: column;
+        margin: 0 20px;
     }
 
     &--red-stars {

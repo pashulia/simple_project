@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  margin: 16px;
+  margin: 16px auto;
   max-width: 880px;
   border: 1px solid black;
 }
@@ -16,19 +16,6 @@ body {
   border-bottom: 2px solid #6F7E9E;
 }
 
-.logo {
-  margin: 28px 0 23px 16px;
-}
-.logo__icon {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: left;
-  color: #31436A;
-  text-decoration: none;
-}
-
 .contact {
   background: #021747;
   font-size: 14px;
@@ -38,7 +25,7 @@ body {
   padding: 11px 12px;
   width: 80px;
   height: 17px;
-  margin: 21px;
+  margin: 21px 0 21px 455px;
 }
 
 .menu {
@@ -59,6 +46,19 @@ body {
     transform: scale(0 10%);
   }
 }
+.logo {
+  margin: 28px 50px 23px 16px;
+}
+.logo__icon {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color: #31436A;
+  text-decoration: none;
+}
+
 .content__title {
   font-weight: 900;
   font-size: 32px;
@@ -284,21 +284,57 @@ body {
   flex-wrap: wrap;
 }
 .rating--text {
-  flex-basis: 75%;
+  flex-basis: 68%;
 }
 .rating__reviews {
   padding: 35px 90px;
-  flex-basis: 25%;
+  flex-basis: 20%;
 }
 .rating__total {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 .rating--red-stars {
   background: url(../disign/red-stars.svg) no-repeat left;
 }
 .rating--green-stars {
   background: url(../disign/green-stars.svg) no-repeat center;
+}
+
+.footer {
+  border-top: 2px solid #6F7E9E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__nav {
+  margin-top: 25px;
+}
+.footer__link {
+  font-size: 16px;
+  line-height: 30px;
+  color: #021747;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.footer__link:hover {
+  opacity: 0.5;
+}
+.footer--RSS::before {
+  content: "";
+  background: url(../disign/rss.svg) no-repeat center;
+  padding: 10px;
+}
+.footer--insta::before {
+  content: "";
+  background: url(../disign/github.svg) no-repeat center;
+  padding: 10px;
+}
+.footer--linkedin::before {
+  content: "";
+  background: url(../disign/linkedin.svg) no-repeat center;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

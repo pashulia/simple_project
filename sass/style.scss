@@ -4,15 +4,17 @@ body {
 }
 
 .container {
-    margin: 16px;
+    margin: 16px auto;
     max-width: 880px;
     border: 1px solid black;
 }
 
 @import 'header';
+@import 'logo';
 @import 'content';
 @import 'content__menu';
 @import 'sections-grid';
 @import 'articles-grid';
 @import 'contact-us';
-@import 'reiting';
+@import 'rating';
+@import 'footer';

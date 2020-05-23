@@ -1,0 +1,40 @@
+.footer {
+    border-top: 2px solid #6F7E9E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__nav {
+        margin-top: 25px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 30px;
+        color: #021747;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        opacity: 0.5;
+    }
+
+    &--RSS::before {
+        content: "";
+        background: url(../disign/rss.svg) no-repeat center;
+        padding: 10px;
+    }
+
+    &--insta::before {
+        content: "";
+        background: url(../disign/github.svg) no-repeat center;
+        padding: 10px;
+    }
+
+    &--linkedin::before {
+        content: "";
+        background: url(../disign/linkedin.svg) no-repeat center;
+        padding: 10px;
+    }
+}
