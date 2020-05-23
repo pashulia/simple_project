@@ -19,6 +19,18 @@
     }
 }
 
+.contact {
+    background: #021747;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 11px 12px;
+    width: 80px;
+    height: 17px;
+    margin: 21px;
+}
+
 .menu {
     width: 18px;
     height: 17px;
@@ -31,5 +43,11 @@
 
     &__link:hover {
         opacity: 0.8;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .contact {
+        transform: scale(0 10%);
     }
 }

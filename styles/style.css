@@ -5,6 +5,7 @@ body {
 
 .container {
   margin: 16px;
+  max-width: 880px;
   border: 1px solid black;
 }
 
@@ -28,6 +29,18 @@ body {
   text-decoration: none;
 }
 
+.contact {
+  background: #021747;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 11px 12px;
+  width: 80px;
+  height: 17px;
+  margin: 21px;
+}
+
 .menu {
   width: 18px;
   height: 17px;
@@ -41,6 +54,11 @@ body {
   opacity: 0.8;
 }
 
+@media screen and (min-width: 900px) {
+  .contact {
+    transform: scale(0 10%);
+  }
+}
 .content__title {
   font-weight: 900;
   font-size: 32px;
@@ -180,6 +198,12 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.contact-us form {
+  margin: 0 auto;
+}
+.contact-us .message {
+  width: 90%;
+}
 .contact-us--placeholder {
   width: 90%;
   font-weight: 500;
@@ -187,7 +211,7 @@ body {
   line-height: 18px;
   color: #6A7798;
   padding: 12px;
-  margin-bottom: 16px;
+  margin: 10px auto;
 }
 .contact-us--placeholder:hover {
   opacity: 0.5;
@@ -211,8 +235,8 @@ body {
   color: #FFFFFF;
   background-color: #021747;
   padding: 12px;
-  margin: 24px 0;
-  max-width: 377px;
+  margin: 24px auto;
+  width: 288px 380px;
 }
 
 .send-style::after {
@@ -224,7 +248,35 @@ body {
 
 @media screen and (min-width: 400px) {
   .send-style::after {
-    margin: 0 0 0 228px;
+    margin: 0 0 0 158px;
+  }
+
+  .btn-send {
+    margin: 24px 10% 24px auto;
+    width: 330px;
+  }
+
+  .name {
+    width: 35%;
+    margin-right: 20px;
+  }
+
+  .email {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .btn-send {
+    margin: 24px 10% 24px 25%;
+  }
+
+  .name {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .email {
+    width: 40%;
   }
 }
 
