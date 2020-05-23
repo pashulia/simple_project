@@ -1,0 +1,17 @@
+.chemist {
+    position: relative;
+
+    &__cloak {
+        position: absolute;
+        bottom: -59px;
+        left: 1700px;
+        z-index: 2;
+    }
+
+    &__chimical {
+        position: absolute;
+        bottom: -100px;
+        left: 1670px;
+        z-index: 3;
+    }
+}

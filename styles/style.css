@@ -406,6 +406,22 @@ body {
   padding: 17px;
 }
 
+.chemist {
+  position: relative;
+}
+.chemist__cloak {
+  position: absolute;
+  bottom: -59px;
+  left: 1700px;
+  z-index: 2;
+}
+.chemist__chimical {
+  position: absolute;
+  bottom: -100px;
+  left: 1670px;
+  z-index: 3;
+}
+
 @media screen and (min-width: 600px) {
   .container {
     max-width: 780px;
