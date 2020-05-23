@@ -1,14 +1,19 @@
 .footer {
     border-top: 2px solid #D5DAE6;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     text-align: center;
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
     &__nav {
-        margin: 25px auto;
-        flex-basis: 100%;
-        text-align: center;
+        margin: 25px 0;
+        border: 1px solid black;
+        padding-top: 10px;
     }
 
     &__link {
@@ -17,6 +22,7 @@
         color: #021747;
         margin-right: 20px;
         text-decoration: none;
+
     }
 
     &__link:hover {
@@ -40,8 +46,12 @@
         background: url(../disign/linkedin.svg) no-repeat center;
         padding: 10px;
     }
+}
 
-    @media screen and (min-width: 400px) {
+@media screen and (min-width: 400px) {
+    .footer {
+        text-align: right;
+
         &__nav {
             flex-basis: 50%;
             text-align: left;

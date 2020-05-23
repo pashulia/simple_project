@@ -15,6 +15,10 @@ body {
   position: relative;
   width: 100%;
 }
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
 
 .contact {
   background: #021747;
@@ -25,10 +29,8 @@ body {
   padding: 11px 12px;
   width: 80px;
   height: 17px;
-  position: absolute;
-  top: 25px;
-  left: 80%;
   display: none;
+  margin: 25px 70px 0 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -81,6 +83,7 @@ body {
 }
 .logo {
   margin: 28px 0;
+  border: 1px solid black;
 }
 .logo__icon {
   font-style: normal;
@@ -345,15 +348,18 @@ body {
 
 .footer {
   border-top: 2px solid #D5DAE6;
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   text-align: center;
 }
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .footer__nav {
-  margin: 25px auto;
-  flex-basis: 100%;
-  text-align: center;
+  margin: 25px 0;
+  border: 1px solid black;
+  padding-top: 10px;
 }
 .footer__link {
   font-size: 16px;
@@ -380,13 +386,16 @@ body {
   background: url(../disign/linkedin.svg) no-repeat center;
   padding: 10px;
 }
+
 @media screen and (min-width: 400px) {
+  .footer {
+    text-align: right;
+  }
   .footer__nav {
     flex-basis: 50%;
     text-align: left;
   }
 }
-
 .license-line {
   background: #00091D;
   font-weight: 500;

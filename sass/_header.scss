@@ -3,6 +3,11 @@
     border-bottom: 2px solid #6F7E9E;
     position: relative;
     width: 100%;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .contact {
@@ -14,10 +19,8 @@
     padding: 11px 12px;
     width: 80px;
     height: 17px;
-    position: absolute;
-    top: 25px;
-    left: 80%;
     display: none;
+    margin: 25px 70px 0 0;
 }
 
 
