@@ -1,11 +1,9 @@
 .header {
     background: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 2px solid #6F7E9E;
+    position: relative;
     width: 100%;
 }
-
 
 .contact {
     background: #021747;
@@ -16,32 +14,24 @@
     padding: 11px 12px;
     width: 80px;
     height: 17px;
-    margin: 21px 0 21px 45px;
+    position: absolute;
+    top: 25px;
+    left: 80%;
     display: none;
 }
 
-.menu {
-    width: 18px;
-    height: 17px;
-    margin: 34px 16px 34px 0;
 
-    &__link {
-        background: url(../disign/header-menu.svg) no-repeat right;
-        padding: 1px 9px;
-    }
-
-    &__link:hover {
-        opacity: 0.8;
-    }
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .contact {
         display: block;
     }
 }
 
 @media screen and (min-width: 900px) {
+    .header {
+        border-bottom: none;
+    }
+
     .contact {
         display: block;
     }

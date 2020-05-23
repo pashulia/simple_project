@@ -1,0 +1,39 @@
+.menu {
+    width: 45px;
+    height: 100%;
+    margin: 5px 16px 34px 20px;
+    border-left: 1px solid #021747;
+    border: none;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    right: 10px;
+
+    &__nav {
+        display: none;
+    }
+
+    &__link:hover {
+        opacity: 0.8;
+    }
+
+    &--icons {
+        margin: 14px;
+        padding: 10px;
+    }
+
+    &--icons:hover {
+        background: #021747;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .menu {
+        border-left: 1px solid #021747;
+
+        &__nav {
+            display: block;
+        }
+    }
+}

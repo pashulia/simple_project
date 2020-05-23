@@ -11,9 +11,8 @@ body {
 
 .header {
   background: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 2px solid #6F7E9E;
+  position: relative;
   width: 100%;
 }
 
@@ -26,35 +25,62 @@ body {
   padding: 11px 12px;
   width: 80px;
   height: 17px;
-  margin: 21px 0 21px 45px;
+  position: absolute;
+  top: 25px;
+  left: 80%;
   display: none;
 }
 
-.menu {
-  width: 18px;
-  height: 17px;
-  margin: 34px 16px 34px 0;
-}
-.menu__link {
-  background: url(../disign/header-menu.svg) no-repeat right;
-  padding: 1px 9px;
-}
-.menu__link:hover {
-  opacity: 0.8;
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .contact {
     display: block;
   }
 }
 @media screen and (min-width: 900px) {
+  .header {
+    border-bottom: none;
+  }
+
   .contact {
     display: block;
   }
 }
+.menu {
+  width: 45px;
+  height: 100%;
+  margin: 5px 16px 34px 20px;
+  border-left: 1px solid #021747;
+  border: none;
+  position: absolute;
+  z-index: 3;
+  top: 25px;
+  right: 10px;
+}
+.menu__nav {
+  display: none;
+}
+.menu__link:hover {
+  opacity: 0.8;
+}
+.menu--icons {
+  margin: 14px;
+  padding: 10px;
+}
+.menu--icons:hover {
+  background: #021747;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    border-left: 1px solid #021747;
+  }
+  .menu__nav {
+    display: block;
+  }
+}
 .logo {
-  margin: 28px 50px 23px 16px;
+  margin: 28px 0;
 }
 .logo__icon {
   font-style: normal;
@@ -227,6 +253,9 @@ body {
 .contact-us__radio-btn {
   display: flex;
   flex-direction: column;
+}
+.contact-us--input {
+  margin-bottom: 15px;
 }
 .contact-us--would {
   font-weight: normal;
