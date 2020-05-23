@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #6F7E9E;
+    width: 100%;
 }
 
 
@@ -15,7 +16,8 @@
     padding: 11px 12px;
     width: 80px;
     height: 17px;
-    margin: 21px 0 21px 455px;
+    margin: 21px 0 21px 45px;
+    display: none;
 }
 
 .menu {
@@ -33,8 +35,14 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+    .contact {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 900px) {
     .contact {
-        transform: scale(0 10%);
+        display: block;
     }
 }

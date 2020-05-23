@@ -5,7 +5,7 @@ body {
 
 .container {
     margin: 16px auto;
-    max-width: 880px;
+    max-width: 288px;
     border: 1px solid black;
 }
 
@@ -18,3 +18,27 @@ body {
 @import 'contact-us';
 @import 'rating';
 @import 'footer';
+@import 'license-line';
+
+@media screen and(min-width: 600px) {
+    .container {
+        max-width: 780px;
+        margin: 16px auto;
+    }
+
+}
+
+@media screen and(min-width: 900px) {
+    .container {
+        max-width: 882px;
+        margin: 16px auto;
+    }
+
+}
+
+@media screen and(min-width: 1440px) {
+    .container {
+        max-width: 1160px;
+        margin: 16px auto;
+    }
+}

@@ -5,7 +5,7 @@ body {
 
 .container {
   margin: 16px auto;
-  max-width: 880px;
+  max-width: 288px;
   border: 1px solid black;
 }
 
@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #6F7E9E;
+  width: 100%;
 }
 
 .contact {
@@ -25,7 +26,8 @@ body {
   padding: 11px 12px;
   width: 80px;
   height: 17px;
-  margin: 21px 0 21px 455px;
+  margin: 21px 0 21px 45px;
+  display: none;
 }
 
 .menu {
@@ -41,9 +43,14 @@ body {
   opacity: 0.8;
 }
 
+@media screen and (min-width: 600px) {
+  .contact {
+    display: block;
+  }
+}
 @media screen and (min-width: 900px) {
   .contact {
-    transform: scale(0 10%);
+    display: block;
   }
 }
 .logo {
@@ -199,7 +206,8 @@ body {
   color: #FFFFFF;
 }
 .contact-us form {
-  margin: 0 auto;
+  margin: 0 16px;
+  max-width: 940px;
 }
 .contact-us .message {
   width: 90%;
@@ -237,6 +245,10 @@ body {
   padding: 12px;
   margin: 24px auto;
   width: 288px 380px;
+}
+
+.btn-send:hover {
+  opacity: 0.5;
 }
 
 .send-style::after {
@@ -303,13 +315,16 @@ body {
 }
 
 .footer {
-  border-top: 2px solid #6F7E9E;
+  border-top: 2px solid #D5DAE6;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
+  text-align: center;
 }
 .footer__nav {
-  margin-top: 25px;
+  margin: 25px auto;
+  flex-basis: 100%;
+  text-align: center;
 }
 .footer__link {
   font-size: 16px;
@@ -335,6 +350,41 @@ body {
   content: "";
   background: url(../disign/linkedin.svg) no-repeat center;
   padding: 10px;
+}
+@media screen and (min-width: 400px) {
+  .footer__nav {
+    flex-basis: 50%;
+    text-align: left;
+  }
+}
+
+.license-line {
+  background: #00091D;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 17px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 780px;
+    margin: 16px auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 882px;
+    margin: 16px auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1160px;
+    margin: 16px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

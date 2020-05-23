@@ -1,11 +1,14 @@
 .footer {
-    border-top: 2px solid #6F7E9E;
+    border-top: 2px solid #D5DAE6;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
+    text-align: center;
 
     &__nav {
-        margin-top: 25px;
+        margin: 25px auto;
+        flex-basis: 100%;
+        text-align: center;
     }
 
     &__link {
@@ -36,5 +39,12 @@
         content: "";
         background: url(../disign/linkedin.svg) no-repeat center;
         padding: 10px;
+    }
+
+    @media screen and (min-width: 400px) {
+        &__nav {
+            flex-basis: 50%;
+            text-align: left;
+        }
     }
 }

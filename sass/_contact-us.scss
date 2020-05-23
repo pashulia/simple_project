@@ -12,7 +12,8 @@
     }
 
     form {
-        margin: 0 auto;
+        margin: 0 16px;
+        max-width: 940px;
     }
 
     .message {
@@ -56,6 +57,10 @@
     padding: 12px;
     margin: 24px auto;
     width: 288px 380px;
+}
+
+.btn-send:hover {
+    opacity: 0.5;
 }
 
 .send-style::after {
