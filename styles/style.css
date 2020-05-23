@@ -279,5 +279,26 @@ body {
     width: 40%;
   }
 }
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rating--text {
+  flex-basis: 75%;
+}
+.rating__reviews {
+  padding: 35px 90px;
+  flex-basis: 25%;
+}
+.rating__total {
+  display: flex;
+  flex-direction: column;
+}
+.rating--red-stars {
+  background: url(../disign/red-stars.svg) no-repeat left;
+}
+.rating--green-stars {
+  background: url(../disign/green-stars.svg) no-repeat center;
+}
 
 /*# sourceMappingURL=style.css.map */

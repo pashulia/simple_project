@@ -1,0 +1,26 @@
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--text {
+        flex-basis: 75%;
+    }
+
+    &__reviews {
+        padding: 35px 90px;
+        flex-basis: 25%;
+    }
+
+    &__total {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--red-stars {
+        background: url(../disign/red-stars.svg) no-repeat left;
+    }
+
+    &--green-stars {
+        background: url(../disign/green-stars.svg) no-repeat center;
+    }
+}
