@@ -363,7 +363,8 @@ form {
   text-align: center;
 }
 .footer__content {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer__nav {
   margin: 25px 0;
@@ -395,12 +396,22 @@ form {
   padding: 10px;
 }
 
+.logo {
+  margin: 30px auto;
+}
+
 @media screen and (min-width: 400px) {
   .footer {
     text-align: right;
   }
   .footer__nav {
-    flex-basis: 50%;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 775px) {
+  .footer__nav {
+    flex-basis: 90%;
     text-align: left;
   }
 }

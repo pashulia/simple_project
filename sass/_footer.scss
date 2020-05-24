@@ -4,8 +4,8 @@
     text-align: center;
 
     &__content {
-        display: block;
-
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__nav {
@@ -19,7 +19,6 @@
         color: #021747;
         margin-right: 20px;
         text-decoration: none;
-
     }
 
     &__link:hover {
@@ -45,13 +44,25 @@
     }
 }
 
+.logo {
+    margin: 30px auto;
+}
+
 @media screen and (min-width: 400px) {
     .footer {
         text-align: right;
 
         &__nav {
-            flex-basis: 50%;
-            text-align: left;
+            text-align: center;
+            flex-basis: 100%;
         }
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .footer__nav {
+
+        flex-basis: 90%;
+        text-align: left;
     }
 }
