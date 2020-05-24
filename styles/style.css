@@ -363,9 +363,7 @@ form {
   text-align: center;
 }
 .footer__content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: block;
 }
 .footer__nav {
   margin: 25px 0;
@@ -417,30 +415,30 @@ form {
 }
 
 .chemist {
-  display: none;
+  border: 1px solid red;
   position: relative;
-  border: 1px solid black;
-  width: 250px;
-  height: 400px;
+  width: 100%;
+  height: 150px;
+  display: none;
 }
 .chemist__cloak {
   background: url(../disign/cloak.svg) no-repeat center;
   position: absolute;
-  bottom: 8px;
-  left: 17px;
+  bottom: -60px;
+  left: 1600px;
   z-index: 2;
   padding: 70px;
 }
 .chemist__chimical {
   background: url(../disign/chimical.svg) no-repeat center;
   position: absolute;
-  bottom: 12px;
-  left: 16px;
+  bottom: -112px;
+  left: 1560px;
   padding: 150px 90px;
   z-index: 3;
 }
 
-@media screen and (min-with: 1840px) {
+@media screen and (min-with: 1740px) {
   .chemist {
     display: block;
   }
