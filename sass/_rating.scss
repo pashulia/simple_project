@@ -11,6 +11,10 @@
         flex-basis: 20%;
     }
 
+    &__reviews:hover {
+        opacity: 0.5;
+    }
+
     &__total {
         display: flex;
         flex-direction: column;

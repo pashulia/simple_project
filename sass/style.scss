@@ -6,7 +6,6 @@ body {
 .container {
     margin: 16px auto;
     max-width: 288px;
-    border: 1px solid black;
 }
 
 @import 'header';
@@ -25,7 +24,7 @@ body {
 @media screen and(min-width: 600px) {
     .container {
         max-width: 780px;
-        margin: 16px auto;
+        margin: 16px 20px;
     }
 
 }
@@ -36,11 +35,4 @@ body {
         margin: 16px auto;
     }
 
-}
-
-@media screen and(min-width: 1440px) {
-    .container {
-        max-width: 1160px;
-        margin: 16px auto;
-    }
 }

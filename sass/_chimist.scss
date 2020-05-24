@@ -1,17 +1,33 @@
 .chemist {
+    display: none;
     position: relative;
+    border: 1px solid black;
+    width: 250px;
+    height: 400px;
 
     &__cloak {
+        background: url(../disign/cloak.svg) no-repeat center;
         position: absolute;
-        bottom: -59px;
-        left: 1700px;
+        bottom: 8px;
+        left: 17px;
         z-index: 2;
+        padding: 70px;
     }
 
     &__chimical {
+        background: url(../disign/chimical.svg) no-repeat center;
         position: absolute;
-        bottom: -100px;
-        left: 1670px;
+        bottom: 12px;
+        left: 16px;
+        padding: 150px 90px;
         z-index: 3;
+    }
+}
+
+
+
+@media screen and (min-with: 1840px) {
+    .chemist {
+        display: block;
     }
 }

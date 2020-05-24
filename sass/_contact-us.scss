@@ -9,38 +9,43 @@
         letter-spacing: 0.2em;
         text-transform: uppercase;
         color: #FFFFFF;
+        padding: 20px 30px;
     }
 
-    form {
-        margin: 0 16px;
-        max-width: 940px;
+    &__form {
+        display: grid;
+        grid-gap: 16px;
     }
 
-    .message {
-        width: 90%;
-    }
-
-    &--placeholder {
-        width: 90%;
+    &--type {
         font-weight: 500;
         font-size: 14px;
         line-height: 18px;
         color: #6A7798;
         padding: 12px;
-        margin: 10px auto;
     }
 
-    &--placeholder:hover {
+    &--data {
+        max-width: 380px;
+    }
+
+
+    &--type:hover {
         opacity: 0.5;
     }
 
     &__radio-btn {
         display: flex;
         flex-direction: column;
+        margin-left: 30px;
     }
 
-    &--input {
-        margin-bottom: 15px;
+    &__form {
+        margin: 0 30px;
+    }
+
+    &__checkbox {
+        display: none;
     }
 
     &--would {
@@ -48,7 +53,34 @@
         font-size: 16px;
         line-height: 30px;
         color: #6A7798;
+        display: flex;
+        margin-bottom: 15px;
+        cursor: pointer;
     }
+
+    &--would:hover {
+        opacity: 0.5;
+    }
+
+    &--would::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        margin: 10px;
+        flex-shrink: 0;
+    }
+
+    label input:checked+.contact-us--would {
+        background: url(../disign/circle.svg) no-repeat center;
+        background-position: 15px 15px;
+    }
+}
+
+form {
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .btn-send {
@@ -59,8 +91,8 @@
     color: #FFFFFF;
     background-color: #021747;
     padding: 12px;
-    margin: 24px auto;
-    width: 288px 380px;
+    margin: 24px 30px;
+    max-width: 288px;
 }
 
 .btn-send:hover {
@@ -70,41 +102,30 @@
 .send-style::after {
     content: "";
     background: url(../disign/arrow.svg) no-repeat right;
-    padding: 2px 28px;
+    padding: 2px 18px;
     margin: 0 0 0 128px;
 }
 
-@media screen and (min-width: 400px) {
-    .send-style::after {
-        margin: 0 0 0 158px;
-    }
-
-    .btn-send {
-        margin: 24px 10% 24px auto;
-        width: 330px;
-    }
-
-    .name {
-        width: 35%;
-        margin-right: 20px;
-    }
-
-    .email {
-        width: 35%;
-    }
-}
-
 @media screen and (min-width: 600px) {
+    .contact-us {
+        &__form {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 50%;
+            grid-template-areas:
+                "contact-us--name contact-us--email"
+                "contact-us--message contact-us--message";
+        }
+
+        &--message {
+            grid-column: 1/3;
+        }
+    }
+
     .btn-send {
-        margin: 24px 10% 24px 25%;
+        margin: 24px 33%;
+        width: 380px;
     }
 
-    .name {
-        width: 40%;
-        margin-right: 20px;
-    }
 
-    .email {
-        width: 40%;
-    }
 }

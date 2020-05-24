@@ -8,7 +8,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Document</title>
+    <title>homework_22</title>
 </head>
 
 <body>
@@ -134,30 +134,31 @@
                 <div class="container">
                     <form>
                         <h3 class="contact-us__title">Contact us</h3>
-                        <input class="contact-us--placeholder name" type="text" placeholder="Your name" />
-                        <input class="contact-us--placeholder email" type="email" placeholder="Email" />
-                        <textarea class="contact-us--placeholder message" name="message" cols="27" rows="2"
-                            placeholder="Message"></textarea>
+                        <div class="contact-us__form">
+                            <input class="contact-us--type contact-us--data" type="text" placeholder="Your name" />
+                            <input class="contact-us--type contact-us--data" type="email" placeholder="Email" />
+                            <input class="contact-us--type contact-us--message" type="text" placeholder="Message" />
+                        </div>
 
                         <h3 class="contact-us__title">THE TITLE №1</h3>
 
                         <div class="contact-us__radio-btn">
-                            <label class="radio">
-                                <input class="contact-us--input" type="radio" name="would" />
+                            <label for="i_have">
+                                <input id="i_have" class="contact-us__checkbox" type="radio" name="would" />
                                 <span class="contact-us--would">
-                                    Would you like to make a project with us?
+                                    I have a project that I’d like to discuss
                                 </span>
                             </label>
-                            <label class="radio">
-                                <input class="contact-us--input" type="radio" name="would" />
+                            <label for="i_need">
+                                <input id="i_need" class="contact-us__checkbox" type="radio" name="would" />
                                 <span class="contact-us--would">
-                                    Would you like to get technical expertise advice?
+                                    I need some technical expertise advice?
                                 </span>
                             </label>
-                            <label class="radio">
-                                <input class="contact-us--input" type="radio" name="would" />
+                            <label for="i_want">
+                                <input id="i_want" class="contact-us__checkbox" type="radio" name="would" />
                                 <span class="contact-us--would">
-                                    Would you like to become a part of our team?
+                                    I want to become Exliratorian and do cool things together :)
                                 </span>
                             </label>
                         </div>
@@ -183,12 +184,12 @@
             </div>
         </div>
     </div>
-    <div class="wow">
-        <div class="chemist">
-            <img class="chemist__cloak" src="./uploads/cloak.svg" alt="cloak-img">
-            <img class="chemist__chimical" src="./uploads/chimical.svg" alt="chimical-img">
-        </div>
+
+    <div class="chemist">
+        <p class="chemist__cloak"></p>
+        <p class="chemist__chimical"></p>
     </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">

@@ -23,6 +23,9 @@
     margin: 25px 70px 0 0;
 }
 
+.contact:hover {
+    opacity: 0.5;
+}
 
 @media screen and (min-width: 768px) {
     .contact {
@@ -30,12 +33,9 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
     .header {
         border-bottom: none;
     }
 
-    .contact {
-        display: block;
-    }
 }
