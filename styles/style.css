@@ -436,28 +436,26 @@ form {
 
 .chemist {
   position: relative;
-  width: 100%;
-  height: 150px;
   display: none;
 }
 .chemist__cloak {
   background: url(../disign/cloak.svg) no-repeat center;
   position: absolute;
-  bottom: -60px;
-  left: 1600px;
+  bottom: -62px;
+  right: 20px;
   z-index: 2;
   padding: 70px;
 }
-.chemist__chimical {
+.chemist__chemical {
   background: url(../disign/chimical.svg) no-repeat center;
   position: absolute;
-  bottom: -112px;
-  left: 1560px;
+  bottom: -116px;
+  right: 20px;
   padding: 150px 90px;
   z-index: 3;
 }
 
-@media screen and (min-with: 1740px) {
+@media screen and (min-width: 1740px) {
   .chemist {
     display: block;
   }
