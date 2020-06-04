@@ -50,7 +50,7 @@ body {
 .menu {
   width: 45px;
   height: 100%;
-  margin: 5px 16px 34px 20px;
+  margin: 0 16px 34px 20px;
   border-left: 1px solid #021747;
   border: none;
   position: absolute;
@@ -268,7 +268,7 @@ body {
   line-height: 30px;
   color: #6A7798;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .contact-us--would:hover {
@@ -455,7 +455,7 @@ form {
   z-index: 3;
 }
 
-@media screen and (min-width: 1740px) {
+@media screen and (min-width: 1400px) {
   .chemist {
     display: block;
   }
